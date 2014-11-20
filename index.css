@@ -1,0 +1,107 @@
+﻿html, body {
+	height: 100%;
+	width: 100%;
+	background: black;
+	background: rgb(76,76,76); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(43,43,43,1) 12%, rgba(33,33,33,1) 25%, rgba(33,33,33,1) 39%, rgba(33,33,33,1) 50%, rgba(22,22,22,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(43,43,43,1)), color-stop(25%,rgba(33,33,33,1)), color-stop(39%,rgba(33,33,33,1)), color-stop(50%,rgba(33,33,33,1)), color-stop(51%,rgba(22,22,22,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(43,43,43,1) 12%,rgba(33,33,33,1) 25%,rgba(33,33,33,1) 39%,rgba(33,33,33,1) 50%,rgba(22,22,22,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(43,43,43,1) 12%,rgba(33,33,33,1) 25%,rgba(33,33,33,1) 39%,rgba(33,33,33,1) 50%,rgba(22,22,22,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(43,43,43,1) 12%,rgba(33,33,33,1) 25%,rgba(33,33,33,1) 39%,rgba(33,33,33,1) 50%,rgba(22,22,22,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(43,43,43,1) 12%,rgba(33,33,33,1) 25%,rgba(33,33,33,1) 39%,rgba(33,33,33,1) 50%,rgba(22,22,22,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+/* Panels */
+#containerPanel {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#mainPanel{
+	height: 97%;
+	width: 98%;
+	margin-top: 1%;
+	margin-left: 1%;	
+}
+
+#innerClock {
+	height:80%;	
+}
+
+#clockPanel {
+	text-align: center;
+
+	height: 19%;
+	width: 98%;
+	margin-left: 1%;
+	background-color: rgba(255,255,255,0.1);
+	overflow: auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	-moz-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	box-shadow: 0px 0px 7px 2px 0.1em(168,0,0,0.6);
+}
+
+#iconsPanel {
+	height: 14%;
+	width: 98%;
+	margin-left: 1%;
+	background-color: rgba(255,255,255,0.1);
+	overflow: auto;
+	
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	-moz-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+}
+
+#contentPanel {
+	height: 63%;
+	width: 98%;
+	margin-left: 1%;
+	background-color: rgba(255,255,255,0.1);
+	overflow: auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	-moz-box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+	box-shadow: 0px 0px 7px 0.1em rgba(168,0,0,0.6);
+}
+
+#iconsRow {
+	height: 100%;
+	width: 10000px;
+	float: left;
+}
+
+#horizontalIconsPanel {
+	height: 80%; 
+	width: 100%; 
+	overflow-x: scroll;
+}
+
+#horizontalIconsPanel::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+/* Objekte */
+.picsClock {
+	height: 100%;
+}
+
+.picsIcons {
+	min-height: 0;
+	min-width: 0;
+
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width :auto;
+	float:left;
+}
+
+
