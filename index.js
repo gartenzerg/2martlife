@@ -2,7 +2,8 @@
 
 function bodyLoad() {
 	updateWatch();
-	loadModules();			
+	loadModules();
+	setFocusOnModules();			
 }		
 
 function bodyResize() {
@@ -65,6 +66,10 @@ function setIconsRowWidth(iconsCount) {
 	$("#iconsRow").css("width", "" + widthIcon);
 }
  
+function setFocusOnModules() {
+	document.getElementById("iconsRow").focus();
+	document.getElementById("iconsRow").scrollIntoView();
+}
 
 
 
