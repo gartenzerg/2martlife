@@ -21,9 +21,7 @@ function onReceivedModules(data) {
 		if (i < modules.length - 1) {
 			document.getElementById("iconsRow").innerHTML += "<div style=\"width: 10px; height:100%; float: left;\"></div>"
 		}							
-	}	
-			
-	setFocusOnModules();										
+	}											
 }
 			
 function loadModules() {

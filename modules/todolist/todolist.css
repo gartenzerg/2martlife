@@ -1,0 +1,22 @@
+﻿#listPanel {	
+	margin: 20px;
+	overflow: scroll;
+}
+
+#listPanel::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+li {
+	color:	#EFEFFB;
+	list-style-type:circle;
+	font-size:300%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-bottom: thin;
+}
+
+ul {
+	
+	list-style-type:circle;
+}
