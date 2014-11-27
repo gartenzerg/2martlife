@@ -1,9 +1,9 @@
-﻿#listPanel {	
+﻿#mailListPanel {	
 	margin: 20px;
 	overflow: scroll;
 }
 
-#listPanel::-webkit-scrollbar { 
+#mailListPanel::-webkit-scrollbar { 
     display: none; 
 }
 
