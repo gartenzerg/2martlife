@@ -2,8 +2,7 @@
 
 function bodyLoad() {
 	updateWatch();
-	loadModules();
-	setFocusOnModules();			
+	loadModules();	
 }		
 
 function bodyResize() {
@@ -22,7 +21,9 @@ function onReceivedModules(data) {
 		if (i < modules.length - 1) {
 			document.getElementById("iconsRow").innerHTML += "<div style=\"width: 10px; height:100%; float: left;\"></div>"
 		}							
-	}											
+	}	
+			
+	setFocusOnModules();										
 }
 			
 function loadModules() {
@@ -65,13 +66,6 @@ function setIconsRowWidth(iconsCount) {
 	var widthIcon = (($("#iconsRow").height() + 10) * iconsCount) - 5;	
 	$("#iconsRow").css("width", "" + widthIcon);
 }
- 
-function setFocusOnModules() {
-	document.getElementById("iconsRow").focus();
-	document.getElementById("iconsRow").scrollIntoView();
-}
-
-
 
 
 
