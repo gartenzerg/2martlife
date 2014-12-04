@@ -1,10 +1,20 @@
+var rawData;
+var timer;
+
+function stop() {
+	window.clearTimeout(timer);
+}
+
 function refreshList() {
 	$.ajax({ url: 'modules/todolist/getList.php', success: onReceivedList });
 }
 
-function onReceivedList(data) {
-	processData(data);
-	setTimeout(refreshList, 5000);	
+function onReceivedList(data) {	
+	if (data != rawData) {
+		processData(data);
+	}
+	rawData = data;
+	timer = setTimeout(refreshList, 5000);	
 }
 
 function processData(data) {

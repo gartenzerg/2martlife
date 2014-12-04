@@ -29,6 +29,7 @@ function loadModules() {
 }						
 					
 function onModuleClick(module) {
+	stop();
 	$("#contentPanel").load("modules/" + module + "/" + module + ".htm");
 }
 						
