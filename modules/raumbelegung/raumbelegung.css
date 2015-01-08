@@ -1,0 +1,31 @@
+﻿.verticalItems {	
+	width: 100%;	
+	height: calc(20% - 5px);
+	padding-bottom: 5px;
+}
+
+.horizontalItems {
+	float: left;
+	height: 100%;
+	width: 33%;	
+}
+
+.reasonPanels {
+	font-size:70%;
+	text-overflow: ellipsis;
+	overflow:hidden;
+}
+
+#mainpanel {
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	
+	padding: 10px 10px 10px 10px;
+		
+	color:	white;
+	list-style-type:circle;
+	font-size:200%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-bottom: thin;	
+}
+
