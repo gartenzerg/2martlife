@@ -1,6 +1,11 @@
 var timer;
 var rawData;
 
+function sendMail() {
+	$.ajax({url: 'modules/email/sendMail.php'});
+}
+
+
 function refreshMailList() {
 	$.ajax({ url: 'modules/email/getMailList.php', success: onReceivedList });
 }
