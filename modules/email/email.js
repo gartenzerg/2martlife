@@ -1,11 +1,24 @@
-var keepRefreshing = true;
+var timer;
+var rawData;
+
+function sendMail() {
+	$.ajax({url: 'modules/email/sendMail.php'});
+}
+
 
 function refreshMailList() {
 	$.ajax({ url: 'modules/email/getMailList.php', success: onReceivedList });
 }
 
-function onReceivedList(data) {
-	processData(data);
+function stop() {
+	window.clearTimeout(timer);
+}
+
+function onReceivedList(data) {	
+	if (data != rawData) {
+		processData(data);
+	}
+	rawData = data;
 	timer = setTimeout(refreshMailList, 5000);		
 }
 
