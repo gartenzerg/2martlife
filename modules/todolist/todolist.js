@@ -1,6 +1,11 @@
 var rawData;
 var timer;
 
+function startToDoList() {
+	rawData="";
+	refreshList();
+}
+
 function stop() {
 	window.clearTimeout(timer);
 }
@@ -11,15 +16,15 @@ function refreshList() {
 
 function onReceivedList(data) {	
 	if (data != rawData) {
-		processData(data);
+		processDataTodoList(data);
 	}
 	rawData = data;
 	timer = setTimeout(refreshList, 5000);	
 }
 
-function processData(data) {
+function processDataTodoList(data) {
 	var i;
-	var panel = document.getElementById("listPanel");
+	var panel = document.getElementById("listPanelTodoList");
 	var content = data.split("\n");
 	
 	panel.innerHTML = "<ul>\n";		
