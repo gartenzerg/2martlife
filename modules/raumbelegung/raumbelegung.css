@@ -2,18 +2,20 @@
 	width: 100%;	
 	height: calc(20% - 5px);
 	padding-bottom: 5px;
+	text-align:center;
 }
 
 .horizontalItems {
 	float: left;
 	height: 100%;
-	width: 33%;	
+	width: 30%;	
 }
 
 .reasonPanels {
 	font-size:70%;
 	text-overflow: ellipsis;
 	overflow:hidden;
+	text-align: left;
 }
 
 #mainpanel {
