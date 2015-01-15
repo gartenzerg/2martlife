@@ -1,0 +1,104 @@
+.textox {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   width: 98%;
+   max-width: 500px;
+   height: 20px;
+   border: solid 1px #EEEEEE;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 12px;
+   box-shadow: 2px 1px 2px 2px rgba(230, 218, 218, 0);
+   background-color: rgba(230,218,218,0);
+   outline: none;
+   color: #44CC42;
+  }
+.textox:focus  {
+   border: solid 1px #16A83F;
+   box-shadow: inset 0px 1px 2px 0px #9C9C9C;
+  }
+.textox:active  {
+   border: solid 1px #0043EB;
+  }
+
+
+.subject {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   width: 98%;
+   max-width: 500px;
+   height: 20px;
+   border: solid 1px #EEEEEE;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 12px;
+   box-shadow: 2px 1px 2px 2px rgba(230, 218, 218, 0);
+   background-color: rgba(230,218,218,0);
+   outline: none;
+   color: #4444FF;
+  }
+.subject:focus  {
+   border: solid 1px #16A83F;
+   box-shadow: inset 0px 1px 2px 0px #9C9C9C;
+  }
+.subject:active  {
+   border: solid 1px #0043EB;
+  }
+
+.message{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   width: 98%;
+   max-width: 500px;
+   height: 120px;
+   border: solid 1px #EEEEEE;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 12px;
+   box-shadow: 2px 1px 2px 2px rgba(230, 218, 218, 0);
+   background-color: rgba(230,218,218,0);
+   outline: none;
+   color: #4FFFFF;
+  }
+.message:focus  {
+   border: solid 1px #16A83F;
+   box-shadow: inset 0px 1px 2px 0px #9C9C9C;
+  }
+.message:active  {
+   border: solid 1px #0043EB;
+  }
+
+
+.css_button {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #dcdcdc;
+    padding: 9px 18px;
+    text-shadow: 1px 1px 0px #ffffff;
+    -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
+    -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
+    box-shadow: inset 1px 1px 0px 0px #ffffff;
+    cursor: pointer;
+    color: #777777;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #dfdfdf 26%, #ededed 100%);
+    background: -moz-linear-gradient(90deg, #dfdfdf 26%, #ededed 100%);
+    background: -ms-linear-gradient(90deg, #dfdfdf 26%, #ededed 100%);
+    background: linear-gradient(180deg, #ededed 26%, #dfdfdf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed",endColorstr="#dfdfdf");
+}
+
+.css_button:hover {
+    background: -webkit-linear-gradient(90deg, #ededed 26%, #dfdfdf 100%);
+    background: -moz-linear-gradient(90deg, #ededed 26%, #dfdfdf 100%);
+    background: -ms-linear-gradient(90deg, #ededed 26%, #dfdfdf 100%);
+    background: linear-gradient(180deg, #dfdfdf 26%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfdfdf",endColorstr="#ededed");
+}
+
+.css_button:active {
+    position:relative;
+    top: 1px;
+}

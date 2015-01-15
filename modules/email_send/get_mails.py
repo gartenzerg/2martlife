@@ -3,12 +3,13 @@ import imaplib
 import sys
 import email
 gmail_user = "mypi.balster@gmail.com"
-gmail_pwd = "raspberry_1"
-
+gmail_pwd = "raspberry_1"    	
 
 #function
 def show_mails(conn):
-    rv, data = conn.search(None, "ALL")
+    f = open("newmails.txt", "w")
+    f.truncate()
+    rv, data = conn.search(None, "UNREAD")
     if rv != 'OK':
        print "No new mails found!"
        return
@@ -18,7 +19,9 @@ def show_mails(conn):
          print "ERROR getting message", num
          return
        msg = email.message_from_string(data[0][1])
-       print 'Message %s: %s' % (num, msg['Subject'])
+       f.write("Von: " + msg['From'] + "\nBetreff: " +  msg['Subject']+ "\n\n")
+       print 'From:%s : %s' % (msg['From'], msg['Subject'])
+    f.close()
 
 #Start
 conn = imaplib.IMAP4_SSL('imap.gmail.com')

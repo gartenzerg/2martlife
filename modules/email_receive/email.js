@@ -7,7 +7,7 @@ function sendMail() {
 
 
 function refreshMailList() {
-	$.ajax({ url: 'modules/email/getMailList.php', success: onReceivedList });
+	$.ajax({ url: 'modules/email_receive/getMailList.php', success: onReceivedList });
 }
 
 function stop() {
@@ -29,12 +29,12 @@ function processData(data) {
 		var content = data.split("\n");
 	
 		panel.innerHTML = "<ul>\n";		
-			
 		for (i = 0; i < content.length; i++) {
 			if (content[i] != "") {
 				panel.innerHTML = panel.innerHTML + "<li>" + content[i] + "</li>\n";
 			}
 		}
-		panel.innerHTML = panel.innerHTML + "</ul>\n";	
+		panel.innerHTML = panel.innerHTML + "</ul>\n";
+	
 	}	
 } 

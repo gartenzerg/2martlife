@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<?php
+include("http://www.youtube.de");
+?>
+</body>
+</html>
