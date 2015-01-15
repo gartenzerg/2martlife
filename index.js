@@ -62,7 +62,7 @@ function addZero(i) {
 }
 
 function setIconsRowWidth(iconsCount) {
-	var widthIcon = (($("#iconsRow").height() + 10) * iconsCount) - 5;	
+	var widthIcon = (($("#iconsRow").height() + 10) * iconsCount) - 4;	
 	$("#iconsRow").css("width", "" + widthIcon);
 }
 
