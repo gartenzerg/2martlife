@@ -16,5 +16,5 @@ function onReceivedData(data) {
 			htmlString += '</div>\n';
 		}
 	}
-	document.getElementById("mainpanel").innerHTML = htmlString;
+	document.getElementById("mainpanelRaumBelegung").innerHTML = htmlString;
 }
