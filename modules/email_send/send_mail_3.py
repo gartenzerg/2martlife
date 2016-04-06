@@ -3,7 +3,7 @@
 import smtplib
 import sys
 gmail_user = "mypi.balster@gmail.com"
-gmail_pwd = "raspberry_1"
+gmail_pwd = ******
 FROM = 'mypi.balster@gmail.com'
 TO = ["%s" % (sys.argv[1])] #must be a list
 SUBJECT = "%s" % (sys.argv[2])
