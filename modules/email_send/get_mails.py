@@ -3,7 +3,7 @@ import imaplib
 import sys
 import email
 gmail_user = "mypi.balster@gmail.com"
-gmail_pwd = "raspberry_1"    	
+gmail_pwd = ******  	
 
 #function
 def show_mails(conn):
