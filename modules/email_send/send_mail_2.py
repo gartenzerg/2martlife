@@ -2,7 +2,7 @@ import smtplib
 gmail_user = "mypi.balster@gmail.com"
 gmail_pwd = ******
 FROM = 'mypi.balster@gmail.com'
-TO = ['s.balster@gmx.net'] #must be a list
+TO = ['test@gmx.net'] #must be a list
 SUBJECT = "Testing sending using gmail"
 TEXT = "Testing sending mail using gmail servers"
 
